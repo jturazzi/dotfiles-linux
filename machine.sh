@@ -1,4 +1,5 @@
 #!/bin/bash
+# curl -L https://jturazzi.github.io/dotfiles-linux/machine.sh | bash
 
 CYAN="\e[36m"
 GREEN="\e[32m"
