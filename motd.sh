@@ -35,3 +35,6 @@ neofetch --config /etc/neofetch/config.conf
 EOT
 echo -e "- ${YELLOW}[2/2]${ENDCOLOR} Configuration du MOTD [${GREEN}✓${ENDCOLOR}]"
 echo
+#-------------------------------------------------------------------------------------------------------
+echo
+echo -e "${CYAN}[Fin du script motd.sh]${ENDCOLOR}"
