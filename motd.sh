@@ -33,6 +33,7 @@ tee -a /etc/update-motd.d/00-motd > /dev/null <<EOT
 figlet $(hostname -s)
 neofetch --config /etc/neofetch/config.conf
 EOT
+chmod +x /etc/update-motd.d/00-motd
 echo -e "- ${YELLOW}[2/2]${ENDCOLOR} Configuration du MOTD [${GREEN}✓${ENDCOLOR}]"
 echo
 #-------------------------------------------------------------------------------------------------------
