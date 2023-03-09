@@ -19,6 +19,7 @@ echo -e "- ${YELLOW}[1/2]${ENDCOLOR} Installation du MOTD [${RED}✗${ENDCOLOR}]
 sleep 2
 mkdir -p /root/.config/neofetch && touch /root/.config/neofetch/config.conf
 mkdir -p /etc/neofetch && touch /etc/neofetch/config.conf
+curl -s https://jturazzi.github.io/dotfiles-linux/neofetch.conf > /home/jeremy/.config/neofetch/config.conf
 curl -s https://jturazzi.github.io/dotfiles-linux/neofetch.conf > /root/.config/neofetch/config.conf
 curl -s https://jturazzi.github.io/dotfiles-linux/neofetch.conf > /etc/neofetch/config.conf
 echo -e "- ${YELLOW}[1/2]${ENDCOLOR} Installation du MOTD [${GREEN}✓${ENDCOLOR}]"
