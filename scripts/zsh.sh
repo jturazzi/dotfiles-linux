@@ -40,9 +40,9 @@ echo
 #-------------------------------------------------------------------------------------------------------
 echo -e "- ${YELLOW}[5/5]${ENDCOLOR} Copie des configurations ZSH [${RED}✗${ENDCOLOR}]"
 sleep 2
-curl -s https://jturazzi.github.io/dotfiles-linux/.aliases > ~/.aliases
-curl -s https://jturazzi.github.io/dotfiles-linux/.p10k.zsh > ~/.p10k.zsh
-curl -s https://jturazzi.github.io/dotfiles-linux/.zshrc > ~/.zshrc
+curl -s https://jturazzi.github.io/dotfiles-linux/aliases > ~/.aliases
+curl -s https://jturazzi.github.io/dotfiles-linux/p10k.zsh > ~/.p10k.zsh
+curl -s https://jturazzi.github.io/dotfiles-linux/zshrc > ~/.zshrc
 echo -e "- ${YELLOW}[5/5]${ENDCOLOR} Copie des configurations ZSH [${GREEN}✓${ENDCOLOR}]"
 echo
 #-------------------------------------------------------------------------------------------------------
