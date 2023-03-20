@@ -1,4 +1,4 @@
-# Version 1.0 (20/03/23)
+# Version 20/03/23
 
 # APT
 alias apt='sudo apt'
@@ -89,8 +89,8 @@ alias pinga='sudo ping'
 alias reboot='sudo /sbin/reboot'
 
 # RM
-alias rm='rm -irI --preserve-root'
-alias rmf='rm -firI --preserve-root'
+alias rm='rm -iI --preserve-root'
+alias rmf='rm -irI --preserve-root'
 
 # SHUTDOWN
 alias shutdown='sudo /sbin/shutdown'
