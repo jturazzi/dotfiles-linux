@@ -1,4 +1,4 @@
-# Version 1 (20/03/23)
+# Version 1.0 (20/03/23)
 
 # APT
 alias apt='sudo apt'
@@ -31,7 +31,7 @@ alias chmod='chmod --preserve-root'
 alias chown='chown --preserve-root'
 
 # CP
-alias cp='cp -i -r -v'
+alias cp='cp -irv'
 
 # CRON
 alias cron='crontab -e'
@@ -62,16 +62,16 @@ alias hg='history | grep $1'
 alias symbolic='sudo ln -s'
 
 # LS
-alias l='ls -Flh'
-alias ll='ls -Flha'
+alias l='ls -Fhl'
+alias ll='ls -aFhl'
 alias ls='ls --color=auto'
-alias sl="ls"
+alias sl='ls --color=auto'
 
 # MKDIR
 alias mkdir='mkdir -pv'
 
 # MV
-alias mv='mv -i -v'
+alias mv='mv -iv'
 
 # NETWORK
 alias dns="sudo systemd-resolve --status | grep 'DNS Servers'"
@@ -79,7 +79,7 @@ alias ipa="hostname -I"
 alias ports='nmap localhost'
 
 # NANO
-alias nano='nano -c'
+alias nano='nano -cm'
 
 # PING
 alias ping='sudo ping -c 4'
@@ -89,8 +89,8 @@ alias pinga='sudo ping'
 alias reboot='sudo /sbin/reboot'
 
 # RM
-alias rm='rm -i -r -I --preserve-root'
-alias rmf='rm -i -f -r -I --preserve-root'
+alias rm='rm -irI --preserve-root'
+alias rmf='rm -firI --preserve-root'
 
 # SHUTDOWN
 alias shutdown='sudo /sbin/shutdown'
@@ -104,7 +104,7 @@ alias service='sudo service'
 
 # SYSTEM
 alias cpu='lscpu'
-alias ram='free -m -l -t'
+alias ram='free -lmt'
 
 # TAR
 alias tarextract='tar -xzvf'
