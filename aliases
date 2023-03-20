@@ -110,7 +110,7 @@ alias ram='free -m -l -t'
 alias tarextract='tar -xzvf'
 
 # UPDATE
-alias update-aliases='curl -s https://jturazzi.github.io/dotfiles-linux/.aliases > $(home).aliases'
+alias update-aliases='curl -s https://jturazzi.github.io/dotfiles-linux/aliases > ~/.aliases'
 
 # WGET
 alias wget='wget -c'
