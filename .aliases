@@ -1,0 +1,116 @@
+# Version 1 (20/03/23)
+
+# UPDATE
+alias update-aliases='curl -s https://jturazzi.github.io/dotfiles-linux/.aliases > $(home).aliases'
+
+# APT
+alias apt='sudo apt'
+alias autoremove='apt autoremove'
+alias install='apt install'
+alias remove='apt remove'
+alias update='apt update'
+alias upgrade='apt update && apt upgrade'
+
+# BATCAT - A cat clone - https://github.com/sharkdp/bat
+alias cat='batcat --style="header" --paging=never'
+alias catn='batcat --pager "less -RF"'
+
+# BTOP - Monitor - https://github.com/aristocratos/btop
+alias btop='btop --utf-force'
+alias top='btop --utf-force'
+
+# CLEAR
+alias c='clear'
+
+# CHEAT
+cheat () {
+    curl "cheat.sh/$1"
+}
+
+# CHMOD
+alias chmod='chmod --preserve-root'
+
+# CHOWN
+alias chown='chown --preserve-root'
+
+# CP
+alias cp='cp -i -r -v'
+
+# CRON
+alias cron='crontab -e'
+
+# DF
+alias df='df -h'
+
+# DOCKER
+alias dcup='docker compose up -d'
+alias dcdown='docker compose down --rmi all --volumes'
+alias dcrestart='docker compose restart'
+alias dcstop='docker compose stop'
+alias dps='docker ps'
+alias dst='docker stats'
+
+# DU
+alias du='du -ch'
+
+# GIT
+alias clone='git clone'
+alias pull='git pull'
+
+# HISTORY
+alias h='history'
+alias hg='history | grep $1'
+
+# LN
+alias symbolic='sudo ln -s'
+
+# LS
+alias l='ls -Flh'
+alias ll='ls -Flha'
+alias ls='ls --color=auto'
+alias sl="ls"
+
+# MKDIR
+alias mkdir='mkdir -pv'
+
+# MV
+alias mv='mv -i -v'
+
+# NETWORK
+alias dns="sudo systemd-resolve --status | grep 'DNS Servers'"
+alias ipa="hostname -I"
+alias ports='nmap localhost'
+
+# NANO
+alias nano='nano -c'
+
+# PING
+alias ping='sudo ping -c 4'
+alias pinga='sudo ping'
+
+# REBOOT
+alias reboot='sudo /sbin/reboot'
+
+# RM
+alias rm='rm -i -r -I --preserve-root'
+alias rmf='rm -i -f -r -I --preserve-root'
+
+# SHUTDOWN
+alias shutdown='sudo /sbin/shutdown'
+
+# SU
+alias su='sudo -i'
+alias root='sudo -i'
+
+# SERVICE
+alias service='sudo service'
+
+# SYSTEM
+alias cpu='lscpu'
+alias ram='free -m -l -t'
+
+# TAR
+alias tarextract='tar -xzvf'
+
+# WGET
+alias wget='wget -c'

@@ -1,0 +1,7 @@
+[user]
+	name = Jérémy Turazzi
+	email = git@jtrz.fr
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
