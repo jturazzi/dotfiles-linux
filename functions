@@ -32,7 +32,7 @@ function mkdircd () {
 }
 
 # UPDATE
-function update-zsh () {
+function update-terminal () {
    curl -s https://jturazzi.github.io/dotfiles-linux/aliases > ~/.aliases
    curl -s https://jturazzi.github.io/dotfiles-linux/functions > ~/.functions
    curl -s https://jturazzi.github.io/dotfiles-linux/p10k.zsh > ~/.p10k.zsh
