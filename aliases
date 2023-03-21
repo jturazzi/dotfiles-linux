@@ -107,8 +107,5 @@ alias service='sudo service'
 alias cpu='lscpu'
 alias ram='free -lmt'
 
-# UPDATE
-alias update-aliases='curl -s https://jturazzi.github.io/dotfiles-linux/aliases > ~/.aliases'
-
 # WGET
 alias wget='wget -c'
