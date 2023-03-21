@@ -19,10 +19,8 @@ alias top='btop --utf-force'
 # CLEAR
 alias c='clear'
 
-# CHEAT
-cheat () {
-    curl "cheat.sh/$1"
-}
+# CLEAN
+alias clean='rm -rf *'
 
 # CHMOD
 alias chmod='chmod --preserve-root'
@@ -65,7 +63,7 @@ alias symbolic='sudo ln -s'
 alias l='ls -Fhl'
 alias ll='ls -aFhl'
 alias ls='ls --color=auto'
-alias sl='ls --color=auto'
+alias sl='ls'
 
 # MKDIR
 alias mkdir='mkdir -pv'
@@ -81,6 +79,9 @@ alias ports='nmap localhost'
 # NANO
 alias nano='nano -cm'
 
+# PATH
+alias path='echo -e ${PATH//:/\\n}'
+
 # PING
 alias ping='sudo ping -c 4'
 alias pinga='sudo ping'
@@ -89,8 +90,8 @@ alias pinga='sudo ping'
 alias reboot='sudo /sbin/reboot'
 
 # RM
-alias rm='rm -iI --preserve-root'
-alias rmf='rm -irI --preserve-root'
+alias rm='rm -i --preserve-root'
+alias rmr='rm -ir --preserve-root'
 
 # SHUTDOWN
 alias shutdown='sudo /sbin/shutdown'
@@ -105,9 +106,6 @@ alias service='sudo service'
 # SYSTEM
 alias cpu='lscpu'
 alias ram='free -lmt'
-
-# TAR
-alias tarextract='tar -xzvf'
 
 # UPDATE
 alias update-aliases='curl -s https://jturazzi.github.io/dotfiles-linux/aliases > ~/.aliases'

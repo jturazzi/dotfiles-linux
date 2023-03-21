@@ -1,3 +1,5 @@
+# 21/03/23
+
 # Powerlevel10k
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -21,4 +23,9 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 if [ -f ~/.aliases ]; then
     . ~/.aliases
+fi
+
+# Functions
+if [ -f ~/.functions ]; then
+    . ~/.functions
 fi
